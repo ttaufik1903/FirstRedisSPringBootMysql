@@ -20,7 +20,8 @@ public class EmployeeController {
 
 	@PostMapping("/employees")
 	public Employee addEmployee(@RequestBody Employee employee) {
-	 	
+		System.out.println("Cabang baru");
+
 		return employeeRepository.save(employee);
 	}
 
