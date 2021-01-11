@@ -26,7 +26,6 @@ public class EmployeeController {
 
 	@GetMapping("/employees")
 	public ResponseEntity<List<Employee>> getAllEmployees() {
-		System.out.println("WELCOME TAUFIK hidayatullah");
 		return ResponseEntity.ok(employeeRepository.findAll());
 	}
 
